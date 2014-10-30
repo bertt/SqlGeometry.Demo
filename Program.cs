@@ -20,7 +20,7 @@ namespace SqlIntersect
             // second polygon with small difference
             const string polygon2 = "POLYGON((0 1,5 1,5 5,1 5,0 1),(2 2, 3 2, 3 3, 2 3,2 2))";
             Console.WriteLine(@"First geometry: {0}", polygon1);
-            Console.WriteLine(@"Second geometry: {0}", polygon1);
+            Console.WriteLine(@"Second geometry: {0}", polygon2);
             var firstGeometry = SqlGeometry.Parse(polygon1);
             var secondGeometry = SqlGeometry.Parse(polygon2);
             // do union
